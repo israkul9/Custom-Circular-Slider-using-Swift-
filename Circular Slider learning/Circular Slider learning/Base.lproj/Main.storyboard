@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJQ-z7-iI4">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Circular_Slider_learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFo-Sx-evR">
+                                <rect key="frame" x="71.666666666666686" y="301" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Fol-hp-eZW"/>
+                                    <constraint firstAttribute="width" constant="250" id="tWU-yT-ZaK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EFo-Sx-evR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jiI-hZ-C1a"/>
+                            <constraint firstItem="EFo-Sx-evR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xNn-nK-YdF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="-26"/>
+        </scene>
+        <!--SliderVC-->
+        <scene sceneID="QY9-cL-Mv4">
+            <objects>
+                <viewController storyboardIdentifier="SliderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cJQ-z7-iI4" customClass="SliderVC" customModule="Circular_Slider_learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P7J-HG-hHf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpo-en-XdU" userLabel="ContainerView">
+                                <rect key="frame" x="6.6666666666666572" y="236" width="380" height="380"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKb-3n-8ti" userLabel="FirstSliderView" customClass="CircularSlider" customModule="Circular_Slider_learning" customModuleProvider="target">
+                                        <rect key="frame" x="28.333333333333343" y="28.666666666666686" width="323" height="323"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wake" translatesAutoresizingMaskIntoConstraints="NO" id="fdT-Am-Q7h">
+                                                <rect key="frame" x="141.66666666666666" y="25" width="40" height="40"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="NMt-SV-dDV"/>
+                                                    <constraint firstAttribute="width" constant="40" id="nuC-o3-XG7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVm-RZ-LT6" userLabel="SecondSliderView" customClass="CircularSlider" customModule="Circular_Slider_learning" customModuleProvider="target">
+                                                <rect key="frame" x="70" y="68" width="183" height="185"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wake" translatesAutoresizingMaskIntoConstraints="NO" id="8w3-qK-QzP">
+                                                        <rect key="frame" x="71.666666666666657" y="22" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="CSj-di-Vb4"/>
+                                                            <constraint firstAttribute="height" constant="40" id="DDR-nE-FRU"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="8w3-qK-QzP" firstAttribute="centerX" secondItem="JVm-RZ-LT6" secondAttribute="centerX" id="el8-Dg-E3G"/>
+                                                    <constraint firstItem="8w3-qK-QzP" firstAttribute="top" secondItem="JVm-RZ-LT6" secondAttribute="top" constant="22" id="laB-nr-Zii"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="JVm-RZ-LT6" secondAttribute="bottom" constant="70" id="9TM-pu-JLL"/>
+                                            <constraint firstItem="fdT-Am-Q7h" firstAttribute="centerX" secondItem="wKb-3n-8ti" secondAttribute="centerX" id="All-gy-S0X"/>
+                                            <constraint firstItem="fdT-Am-Q7h" firstAttribute="top" secondItem="wKb-3n-8ti" secondAttribute="top" constant="25" id="Hlc-7C-Pz5"/>
+                                            <constraint firstItem="JVm-RZ-LT6" firstAttribute="leading" secondItem="wKb-3n-8ti" secondAttribute="leading" constant="70" id="nBr-NH-zgS"/>
+                                            <constraint firstAttribute="trailing" secondItem="JVm-RZ-LT6" secondAttribute="trailing" constant="70" id="nKb-Rp-dtN"/>
+                                            <constraint firstItem="JVm-RZ-LT6" firstAttribute="top" secondItem="fdT-Am-Q7h" secondAttribute="bottom" constant="3.3300000000000001" id="zC9-fh-Ztf"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="backtrackLineWidth">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="diskFillColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="diskColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackFillColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wKb-3n-8ti" firstAttribute="width" secondItem="hpo-en-XdU" secondAttribute="width" multiplier="0.85" id="3Pw-WV-PFk"/>
+                                    <constraint firstItem="wKb-3n-8ti" firstAttribute="height" secondItem="hpo-en-XdU" secondAttribute="height" multiplier="0.85" id="KSX-oO-FLE"/>
+                                    <constraint firstAttribute="height" constant="380" id="L3N-lO-Vst"/>
+                                    <constraint firstAttribute="width" constant="380" id="WvT-4d-e4w"/>
+                                    <constraint firstItem="wKb-3n-8ti" firstAttribute="centerX" secondItem="hpo-en-XdU" secondAttribute="centerX" id="bYn-UH-hI1"/>
+                                    <constraint firstItem="wKb-3n-8ti" firstAttribute="centerY" secondItem="hpo-en-XdU" secondAttribute="centerY" id="jDB-yk-B9d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RGS-Co-F24"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hpo-en-XdU" firstAttribute="centerX" secondItem="P7J-HG-hHf" secondAttribute="centerX" id="XfF-l4-1BG"/>
+                            <constraint firstItem="hpo-en-XdU" firstAttribute="centerY" secondItem="P7J-HG-hHf" secondAttribute="centerY" id="rCc-K6-ZHK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FirstSlider" destination="wKb-3n-8ti" id="UdC-WX-jjS"/>
+                        <outlet property="SecondSlider" destination="JVm-RZ-LT6" id="fDE-bF-dHq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c44-k4-MkG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441.98473282442745" y="-80.281690140845072"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Wake" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
